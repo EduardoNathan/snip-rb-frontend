@@ -1,8 +1,13 @@
+import UrlInput from "@/components/ui/input/url-input";
+import Header from "@/components/ui/navigation/header";
+
 function Dashboard() {
   return (
-    <div className="p-8">
-      <h1 className="text-2xl font-semibold">snip.rb</h1>
-      <p className="text-muted-foreground mt-1">seu encurtador de urls</p>
+    <div className="flex flex-col">
+      <Header totalClicks={2} totalLinks={4} />
+      <div className="flex items-center p-8">
+        <UrlInput />
+      </div>
     </div>
   );
 }
